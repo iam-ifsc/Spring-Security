@@ -1,0 +1,13 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            # habilitando o google como provedor de identidade
+            client-id:  
+            client-secret:  
+      # fazendo cliente oauth como resource server
+      resourceserver:
+        jwt:
+          issuer-uri: https://accounts.google.com
